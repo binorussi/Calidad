@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calidad Leather</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">
+                    <img src="Images/logo.jpg" alt="LeatherLux Logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" data-en="Home" data-am="መነሻ">Home</a></li>
+                <li><a href="#shop" data-en="Shop" data-am="ግዢ">Shop</a></li>
+                <li><a href="#about" data-en="About Us" data-am="ስለእኛ">About Us</a></li>
+                <li><a href="#contact" data-en="Contact" data-am="እውቂያ">Contact</a></li>
+            </ul>
+            <div class="language-switcher">
+                <select id="language-select">
+                    <option value="en">EN</option>
+                    <option value="am">አማ</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+
+    
+    <section id="home" class="hero">
+        <div class="slider-frame">
+            <div class="slide-images">
+            <div class="img-container">
+                <img src="Images/hero1.jpg" >
+            </div>
+            <div class="img-container">
+                <img src="Images/hero2.jpg" >
+            </div>
+            <div class="img-container">
+                <img src="Images/hero3.jpg" >
+            </div>
+            <div class="img-container">
+                <img src="Images/hero4.jpg" >
+            </div>
+            <div class="img-container">
+                <img src="Images/hero5.jpg" >
+            </div>
+        </div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 data-en="Premium Leather Bags" data-am="በጥራት የተመረቱ የቆዳ ቦርሳዎች">Premium Leather Bags</h1>
+            <p data-en="Crafted with excellence and designed to impress" data-am="በኢትዮጵያ ቆዳ በኢትዮጵያዊ ባለሙያ የተመረቱ ቦርሳዎችን">Crafted with excellence and designed to impress</p>
+            <a href="#shop" class="cta-button" data-en="Shop Now" data-am="ይሸምቱ">Shop Now</a>
+        </div>
+    </section>
+    <section class="img-separator">
+        <div>
+            <img src="Images/separator.jpg" alt="merged-bags-as-separator">
+        </div>
+    </section>
+    
+    <section id="featured" class="featured-products">
+        <h2 data-en="Featured Products" data-am="የተለያዩ ምርቶች">Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="images/bag1.jpg" alt="Leather Bag 1">
+                <h3 data-en="Classic Leather Tote" data-am="የቆዳ ቦርሳ">Classic Leather Tote</h3>
+                <p>2500 Birr</p>
+                <a href="#" class="button" data-en="View Details" data-am="በዝርዝር ይመልከቱ">View Details</a>
+            </div>
+            <div class="product-item">
+                <img src="images/bag2.jpg" alt="Leather Bag 2">
+                <h3 data-en="Vintage Leather Satchel" data-am="የቆዳ ቦርሳ">Vintage Leather Satchel</h3>
+                <p>1800 Birr</p>
+                <a href="#" class="button" data-en="View Details" data-am="በዝርዝር ይመልከቱ">View Details</a>
+            </div>
+        </div>
+    </section>
+    <section id="upload-design" class="upload-design">
+        <h2 data-en="Upload Your Design" data-am="የሚፈልጉትን ዲዛይን አስገብተው ሌላውን ለኛ ይተውልን">Upload Your Design and Leave The Rest To Us</h2>
+        <form id="design-upload-form" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="design-file" data-en="Choose File" data-am="ፋይል ምረጡ">Choose File:</label>
+                <input type="file" id="design-file" name="design-file" accept=".jpg, .jpeg, .png" required>
+            </div>
+            <div class="form-group">
+                <label for="design-description" data-en="Description" data-am="መግለጫ">Description:</label>
+                <textarea id="design-description" name="design-description" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-button" data-en="Upload Design" data-am="ማስመዝገብ መረጡ">Upload Design</button>
+        </form>
+    </section>
+
+    <section id="contact" class="contact-us">
+        <h2 data-en="Contact Us" data-am="እውቂያ">Contact Us</h2>
+        <div class="contact-container">
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name" data-en="Name" data-am="ስም">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" data-en="Email" data-am="ኢሜል">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" data-en="Message" data-am="መልእክት">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-button" data-en="Send" data-am="ላክ">Send</button>
+            </form>
+            <div class="contact-info">
+                <p data-en="You can also reach us at:" data-am="እንዲሁም በዚህ ሊያገኙን ይችላሉ:"></p>
+                <p data-en="Email: contact@calidadleather.com" data-am="ኢሜል: contact@calidadleather.com"></p>
+                <p data-en="Phone: +251-123-456-789" data-am="ስልክ: +251-123-456-789"></p>
+                <p data-en="Address: Addis Ababa, Ethiopia" data-am="አድራሻ: አዲስ አበባ, ኢትዮጵያ"></p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <footer>
+        <div class="footer-content">
+            <p data-en="&copy; 2024 Calidad Leather. All rights reserved." data-am="&copy; 2024 Calidad Leather. መብቶች ሁሉ ተበተናል.">&copy; 2024 Calidad Leather. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="#" data-en="Facebook" data-am="ፌስቡክ">Facebook</a></li>
+                <li><a href="#" data-en="Instagram" data-am="ኢንስታግራም">Instagram</a></li>
+                <li><a href="#" data-en="Twitter" data-am="ትዊተር">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
